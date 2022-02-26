@@ -214,12 +214,14 @@
       {% else %}
         {{ post.content }}
       {%- endif %}
+      
     </div>
-
+    
     {#####################}
     {### END POST BODY ###}
     {#####################}
 
+    
 
     {%- if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
       {{ partial('_partials/post/post-related.swig') }}
@@ -240,7 +242,7 @@
         {{ partial('_partials/post/post-followme.swig', {}, {cache: theme.cache.enable}) }}
       {%- endif %}
 
-
+         
       <footer class="post-footer">
         {%- if post.tags and post.tags.length %}
           {%- if theme.tag_icon %}
