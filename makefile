@@ -1,13 +1,18 @@
 all:
-	# $(MAKE) -C nodeppt/ 
-	hexo g;
-	hexo d;
+	make nodeppt
+	hexo g 
+	hexo d 
+
+nodeppt:
+	$(MAKE) -C source/slideshare/
 
 test:
+	make nodeppt
 	hexo g
 	hexo s
 
 deploy:
-	hexo g
+	make nodeppt
+	hexo g 
 	hexo d
 	

@@ -54,6 +54,12 @@ menu:
     i18n:
       cn: "幻灯片"
     path: /page/slideshare
+  contact:
+    name: 'Contact'
+    i18n:
+      cn: '联系我'
+      en: 'Contact'
+    path: 'https://dianwoshishi.github.com'
 
 #! ---------------------------------------------------------------
 #! Theme Config
