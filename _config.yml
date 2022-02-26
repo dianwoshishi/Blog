@@ -3,18 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 懂珠宝的NetW0rker的个人博客
-subtitle: ''
-description: ''
-keywords: 网络 安全 珠宝
-author: 懂珠宝的NetW0rker
-language: zh-CN
-timezone: Asia/Shanghai
-
+# Site 配置
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://dianwoshishi.github.io
-permalink: :year/:month/:day/:title/
+permalink: /post/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -34,10 +27,6 @@ skip_render: README.md
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -97,9 +86,21 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
-# theme: matery
+# theme: next
+theme: aurora
 # theme: kaze
+
+#marked setting for markdown
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
