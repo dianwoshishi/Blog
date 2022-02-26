@@ -1,4 +1,5 @@
 all:
+	hexo clean
 	make nodeppt
 	hexo g 
 	hexo d 
