@@ -12,14 +12,14 @@ title: 明说网络的Blog
 site:
   subtitle: '明说网络的个人博客'
   description: '和你去看网络空间'
-  keywords: 网络 安全
+  keywords: 网络 安全 cyberspace
   author: 明说网络
   nick: dianwoshishi
   language: cn
   multi_language: true
   timezone: Asia/Shanghai
   avatar: https://pic3.zhimg.com/v2-7803c8223e2c425aea4fc530975ee5f2_xl.jpg
-  favicon: https://assets-cdn.github.com/favicon.ico
+  favicon: /favicon.ico
   beian:
     number: ''
     link: ''
@@ -54,6 +54,12 @@ menu:
     i18n:
       cn: "幻灯片"
     path: /page/slideshare
+  contact:
+    name: 'Contact'
+    i18n:
+      cn: '联系我'
+      en: 'Contact'
+    path: 'https://dianwoshishi.github.com'
 
 #! ---------------------------------------------------------------
 #! Theme Config
@@ -85,7 +91,6 @@ socials:
   #! Example:
   #! --- Using SVG
     bilibili:
-      icon: http://localhost:4000/svg/bilibili.svg
       link: https://space.bilibili.com/432126410 
 
 
@@ -112,11 +117,11 @@ gitalk:
   autoExpand: true
   clientID: 'f0ced082166f6e157dec'
   clientSecret: 'cca191203dd4fa989aec26ef6796ea5b5ee0de45'
-  repo: 'dev-blog-comments'
+  repo: 'blogtalk'
   owner: 'dianwoshishi'
   admin: ['dianwoshishi']
   id: uid
-  language: en
+  language: cn
   distractionFreeMode: true
   recentComment: true
   proxy: ''
