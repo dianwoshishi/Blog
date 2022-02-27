@@ -2,18 +2,18 @@ all:
 	hexo clean
 	make nodeppt
 	hexo g 
+	gulp
 	hexo d 
-
+source:
+	source ~/.profile
 nodeppt:
 	$(MAKE) -C source/slideshare/
 
 test:
-	make nodeppt
 	hexo g
 	hexo s
 
 deploy:
-	make nodeppt
 	hexo g 
 	hexo d
 	
